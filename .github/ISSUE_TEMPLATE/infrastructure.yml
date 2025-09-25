@@ -1,0 +1,23 @@
+name: Infrastructure Issue - arm64-toolchain
+description: Report toolchain, environment, or CI/CD issues in arm64-toolchain
+title: "[Infrastructure] arm64-toolchain: "
+labels: ["infrastructure", "arm64-toolchain"]
+assignees:
+  - macjunkins
+
+body:
+  - type: dropdown
+    id: infrastructure-category
+    attributes:
+      label: Infrastructure Category
+      options:
+        - Toolchain Installation System
+        - Cross-compilation Environment
+        - Docker Container Infrastructure
+        - Package Manager Integration
+        - Build System Configuration
+        - Environment Validation
+        - Platform Compatibility
+        - CI/CD Pipeline Issues
+    validations:
+      required: true

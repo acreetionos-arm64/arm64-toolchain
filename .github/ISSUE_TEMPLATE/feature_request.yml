@@ -1,0 +1,31 @@
+name: Feature Request - arm64-toolchain
+description: Suggest a new feature for the arm64-toolchain submodule
+title: "[Feature] arm64-toolchain: "
+labels: ["enhancement", "arm64-toolchain"]
+assignees:
+  - macjunkins
+
+body:
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature Category
+      options:
+        - New Platform Support
+        - Installation Automation
+        - Cross-compilation Enhancement
+        - Docker Environment Improvement
+        - Build System Integration
+        - Validation and Testing
+        - Performance Optimization
+        - Documentation Enhancement
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: Feature Summary
+      placeholder: Describe the feature you would like to see
+    validations:
+      required: true

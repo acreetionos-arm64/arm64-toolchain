@@ -1,0 +1,68 @@
+name: Bug Report - arm64-toolchain
+description: Report a bug in the arm64-toolchain submodule
+title: "[Bug] arm64-toolchain: "
+labels: ["bug", "arm64-toolchain"]
+assignees:
+  - macjunkins
+
+body:
+  - type: dropdown
+    id: bug-category
+    attributes:
+      label: Bug Category
+      options:
+        - Toolchain Installation Failure
+        - Cross-compilation Error
+        - Environment Setup Issue
+        - Platform Compatibility Problem
+        - CMake Integration Error
+        - Docker Container Issue
+        - Validation Script Failure
+        - Library Linking Problem
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected-platform
+    attributes:
+      label: Affected Platform
+      options:
+        - Ubuntu 20.04 LTS
+        - Ubuntu 22.04 LTS
+        - Fedora 37+
+        - macOS 11+ (Big Sur)
+        - macOS 12+ (Monterey)
+        - macOS 13+ (Ventura)
+        - Arch Linux
+        - Other Linux Distribution
+    validations:
+      required: true
+
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Information
+      placeholder: |
+        Host OS: Ubuntu 22.04 LTS
+        Package Manager: apt 2.4.8
+        Available Space: 50GB
+        RAM: 16GB
+        Docker: 20.10.21 (if using containers)
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      placeholder: Describe what happened and what you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-output
+    attributes:
+      label: Error Output
+      render: shell
+    validations:
+      required: true

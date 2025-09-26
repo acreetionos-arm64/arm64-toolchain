@@ -1,12 +1,28 @@
-# CLAUDE.md - arm64-toolchain AI Development Context
+# CLAUDE.md - arm64-toolchain Repository
 
-This file provides AI development context and guidance for working with the arm64-toolchain submodule of the AcreetionOS ARM64 workspace.
+This file provides guidance to Claude Code when working with the **arm64-toolchain** submodule in the AcreetionOS ARM64 workspace.
 
-## Repository Context
+## Repository Overview
 
-**Domain**: Cross-compilation Toolchain and Development Environment
+**Repository**: `arm64-toolchain/` (Repository #2 in WBS)
+**Purpose**: Cross-compilation environment and QEMU setup for ARM64 development
+**Parent Workspace**: `acreetionos-arm64/workspace`
+**WBS Prefix**: M[milestone].2.[task]
+
+**Current Focus**: ARM64 cross-compilation infrastructure for x86_64 host systems
 **Primary Technologies**: GCC cross-compiler, GNU binutils, CMake, Docker, shell scripting
-**Development Focus**: ARM64 cross-compilation infrastructure for x86_64 host systems
+
+## WBS Issues for arm64-toolchain Repository
+
+### Milestone 1 (M1) - Foundation & Infrastructure
+**M1.2.1** - Setup ARM64 cross-compilation toolchain (10-15h) `priority:critical`
+**M1.2.2** - Create ARM64 chroot environment for package testing (6-8h) `priority:important`
+**M1.2.3** - Validate toolchain with test package builds (4-7h) `priority:important`
+
+### Milestone 2 (M2) - Core ARM64 Implementation
+**M2.2.1** - Complete cross-compilation environment integration (10-15h) `priority:critical`
+**M2.2.2** - Begin compilation of critical custom packages (12-15h) `priority:critical`
+**M2.2.3** - Integrate ARM64 build system with existing workflows (3-5h) `priority:important`
 
 ### Repository Purpose
 The arm64-toolchain repository serves as the foundational infrastructure for the entire AcreetionOS ARM64 project, providing cross-compilation capabilities that enable building ARM64 binaries on x86_64 development machines. This includes toolchain installation automation, environment configuration, build system integration files, and validation tools to ensure consistent cross-compilation across different development environments.
